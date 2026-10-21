@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Quote Designer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Daily Quote Designer</h1>
+    <p>Design beautiful quotes for your social media pages.</p>
+</header>
+
+<main class="workspace">
+
+    <section class="editor">
+        <h2>Poster Settings</h2>
+
+        <label for="photoInput">Choose photograph</label>
+        <input type="file" id="photoInput" accept="image/*">
+
+        <label for="quoteInput">Your quote</label>
+        <textarea id="quoteInput" rows="5">Your quote here</textarea>
+
+        <label for="authorInput">Speaker's name</label>
+        <input type="text" id="authorInput" value="Allan Bua">
+
+        <label for="dateInput">Date</label>
+        <input type="date" id="dateInput">
+
+        <label for="brandInput">Page name</label>
+        <input type="text" id="brandInput" value="DAILY QUOTES">
+
+        <label for="taglineInput">Page slogan</label>
+        <input type="text" id="taglineInput" value="Better Mindset | Brighter Future">
+
+        <label for="accentInput">Accent colour</label>
+        <input type="color" id="accentInput" value="#d71920">
+
+        <button id="downloadBtn">Download Poster PNG</button>
+    </section>
+
+    <section class="preview-section">
+        <h2>Live Poster Preview</h2>
+
+        <div class="canvas-container">
+            <canvas id="posterCanvas"></canvas>
+        </div>
+
+        <p class="help">
+            Upload either a portrait or landscape photograph.
+            The poster layout will adjust automatically.
+        </p>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

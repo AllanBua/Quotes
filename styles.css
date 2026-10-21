@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f2f5;
+    color: #222;
+}
+
+header {
+    padding: 22px 15px;
+    background: #172333;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+    color: #ddd;
+}
+
+.workspace {
+    max-width: 1300px;
+    margin: 25px auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 320px minmax(0, 1fr);
+    gap: 25px;
+    align-items: start;
+}
+
+.editor,
+.preview-section {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000012;
+    min-width: 0;
+}
+
+.editor h2,
+.preview-section h2 {
+    margin-top: 0;
+}
+
+.editor label {
+    display: block;
+    margin: 16px 0 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.editor input,
+.editor textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.editor input[type="color"] {
+    height: 45px;
+    padding: 4px;
+}
+
+.editor textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    margin-top: 22px;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #d71920;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a91017;
+}
+
+button:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+.canvas-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#posterCanvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 750px;
+    background: #e6c39a;
+    border-radius: 3px;
+}
+
+.help {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+@media (max-width: 750px) {
+    .workspace {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .editor,
+    .preview-section {
+        padding: 15px;
+    }
+}
