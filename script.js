@@ -325,7 +325,7 @@ function drawQuotePanel(w, h) {
     const panelY = h - actualPanelHeight - h * 0.035;
 
     // Draw the translucent white box.
-    ctx.fillStyle = "rgba(255, 255, 255, 0.88)";
+    ctx.fillStyle = "rgba(255, 255, 255, 0.65)";
     ctx.fillRect(
         panelX,
         panelY,
